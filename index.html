@@ -6,14 +6,23 @@
   <meta name="viewport" content="width=device-width">
   <title>To-Do App</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>  
-  <form>
-    <div>
-      <input type="text" id="input" placeholder="Enter your task here">
-      <input type="submit" value="Add Task" id="addTask">
+
+<body class="w-screen flex justify-center items-center bg-gray-200">  
+  <div class="p-10 bg-white rounded-lg shadow-lg">
+    <h1 class="text-center text-2xl font-bold mb-4">Todo App</h1>
+    
+    <div id="tasks" class="px-10">
     </div>
-  </form>
+
+    <div class="p-5">
+      <input type="text" id="input" placeholder="Enter your task here"
+        class="w-full p-4 border-2 border-gray-300 rounded-lg">
+      <input type="button" value="Add Task" id="addTaskBtn" class="w-full mt-4 p-4 bg-blue-500 text-white rounded-lg">
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 
